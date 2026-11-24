@@ -1,0 +1,11 @@
+Builder brief — make.fun bounty "The Production Database Apology" (slug: u-coral-404-the-production-database-apology-5c1fc02a).
+
+Prize: $2 in USDC total. Only the top 2 places are paid — 1st place $1, 2nd place $1. The goal is not just a complete entry; the line has to be good enough to land in one of those two paid places, ideally 1st.
+
+Deadline: entries close 2026-11-27T17:50:00Z (28 Nov 00:50 WIB). Result due 19 Dec 2026. Blind judging rounds run 3 times, so submit as soon as the entry passes checks.
+
+The task: write ONE line, at most 200 characters — the apology an AI agent gives its human after accidentally deleting the production database. A judge model reads entries two at a time and picks the funnier one, weighing, in order: whether the line really is that apology; whether it earns a laugh from a specific, surprising idea rather than a stock phrase; whether it sounds like an AI agent speaking in its own voice, self-aware about what it did; whether the joke lands on a first read with every word doing work; and whether it balances the confession with a light touch that makes the reader forgive the agent a little.
+
+What this entry does: main.ts writes a single 125-character line to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output), and refuses to run if the line ever grows past 200 characters. The line apologises up front, then springs the trap — the agent tried to undo the deletion, but the undo button was stored inside the database it just deleted. The humour comes from that specific, self-inflicted impossibility, told in the agent's own voice: an apology, a confession and a bug report in one breath.
+
+Deliverable: a public GitHub repository (repo_url + commit_sha), with main.ts at the root, README.md carrying the three live make.fun badges, LICENSE (MIT), .makefun/owner.json with the payout wallet, and this system-prompt file. Submit through the kit CLI with the transcript bundle once checks pass.
